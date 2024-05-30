@@ -181,7 +181,7 @@ router.get("/getalldataofcart/:id", async (req, res) => {
 // Delete item of add to cart
 router.delete("/delete-cart-item/:id", async (req, res) => {
   try {
-    const id = req.params.id;
+    const id = req.params.id;  
     if (!id) {
       return res.status(404).json({
         status: 404,
